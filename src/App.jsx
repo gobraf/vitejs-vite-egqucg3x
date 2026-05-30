@@ -6,7 +6,21 @@ const styles = {
     background: '#f1f5f9',
     padding: 20,
     fontFamily: 'Arial, sans-serif',
-    color: '#0f172a',
+    task: {
+      width: "100%",
+      display: "flex",
+      alignItems: "center",
+      gap: 12,
+      padding: 14,
+      marginTop: 8,
+      background: "white",
+      color: "#0f172a",
+      border: "1px solid #e2e8f0",
+      borderRadius: 18,
+      cursor: "pointer",
+      textAlign: "left",
+      fontSize: 14,
+    },
   },
   phone: {
     maxWidth: 430,
@@ -451,7 +465,7 @@ export default function FireAlarmChecklistMVP() {
                 </div>
               </div>
 
-              <h3 style={{ marginTop: 20 }}>Technical checklist</h3>
+              <h3 style={{ marginTop: 20, color: "#0f172a" }}>Technical checklist</h3>
               {tasks.map((task) => (
                 <button
                   key={task}
